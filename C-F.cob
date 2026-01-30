@@ -11,9 +11,7 @@
            DISPLAY 'CELSIUS-FAHRENHEIT'.
            ACCEPT WS-CEL.
            DISPLAY 'CELSIUS: ' WS-CEL.
-           COMPUTE WS-FAH = WS-CEL * 9.
-           COMPUTE WS-FAH = WS-FAH / 5.
-           COMPUTE WS-FAH = WS-FAH + 32.
+           COMPUTE WS-FAH = (WS-CEL * 9/5) + 32.
            DISPLAY WS-FAH.
   
            STOP RUN.
